@@ -21,7 +21,23 @@ let weather_man = sprites.create(img`
 let weather_effects = Math.randomRange(0, 6)
 if (weather_effects == 0) {
     effects.confetti.startScreenEffect()
-    weather_effects.say("Confetti!!")
-} else {
-	
+    weather_man.say("Confetti!!")
+} else if (weather_effects == 1) {
+    effects.hearts.startScreenEffect()
+    weather_man.say("Much Love")
+} else if (weather_effects == 2) {
+    effects.smiles.startScreenEffect()
+    weather_man.say("NICE!!")
+} else if (weather_effects == 3) {
+    effects.blizzard.startScreenEffect()
+    weather_man.say("COLD!")
+} else if (weather_effects == 4) {
+    effects.bubbles.startScreenEffect()
+    weather_man.say("BUBBLES!!")
+} else if (weather_effects == 5) {
+    effects.starField.startScreenEffect()
+    weather_man.say("NICE!!")
+} else if (weather_effects == 6) {
+    effects.clouds.startScreenEffect()
+    weather_man.say("Boi")
 }
